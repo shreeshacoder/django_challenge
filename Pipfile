@@ -10,6 +10,7 @@ autopep8 = "*"
 django = "*"
 djangorestframework = "*"
 django-import-export = "*"
+coreapi = "*"
 
 [requires]
 python_version = "3.6"

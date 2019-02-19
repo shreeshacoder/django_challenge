@@ -9,14 +9,23 @@ from tablib import Dataset
 class HouseDetailsList(generics.ListAPIView):
     queryset = HouseDetails.objects.all()
     serializer_class = HouseDetailsSerializer
+    """
+    HELLO
+    """
 
 class HouseDetailsDetail(generics.RetrieveAPIView):
     queryset = HouseDetails.objects.all()
     serializer_class = HouseDetailsSerializer
+    """
+    HELLO
+    """
 
 class CreateHouseDetailEntry(generics.CreateAPIView):
     queryset = HouseDetails.objects.all()
     serializer_class = HouseDetailsSerializer
+    """
+    HELLO
+    """
 
 def simple_upload(request):
     if request.method == 'POST':
