@@ -22,7 +22,7 @@ class HouseDetails(models.Model):
     year_built = models.IntegerField(null = True)
     zestimate_amount = models.IntegerField(null = True)
     zestimate_last_updated = models.DateField(null = True)
-    zillow_id = models.IntegerField(null = True)
+    zillow_id = models.IntegerField()
     address =  models.CharField(max_length = 50, null = True)
     city =  models.CharField(max_length = 30, null = True)
     state =  models.CharField(max_length = 2, null = True)
