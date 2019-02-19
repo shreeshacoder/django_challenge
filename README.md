@@ -9,6 +9,14 @@ python manage.py runserver
 The code for data modelling can be found under ```./house_details/models.py```  Null values are accepted for all fields 
 except **zillow_id**  
 ## To ingest the CSV data
+### [Endpoint](http://127.0.0.1:8000/admin/house_details/housedetails/)  
 I've used [django-import-export](https://django-import-export.readthedocs.io/en/latest/) library to allow admin to 
-import CSV data into the database, which can be queried later on.  
-Code can for this can be found at 
+upload a CSV file, to import the data into a database, which can be queried later on.  
+Code enabling this feature for this can be found at ```./house_details/import.html```, ```./house_details/resource.py```, ```./house_details/admin.py```   
+![Image of Admin CSV Upload](./django_import_csv.png)
+## To query the data  
+The data can be queried using this [endpoint](http://127.0.0.1:8000/api/23/)  
+Change the **id** in the url to view a different entry. This has been implemented using django-rest-framework generic views.
+## To create a new entry  
+This can be done at this [endpoint](http://127.0.0.1:8000/api/create/)  
+This functionality has been implemented using django-rest-framework generic views.
