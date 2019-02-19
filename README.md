@@ -10,7 +10,7 @@ python manage.py runserver
 
 ## Data Modelling
 
-The code for data modelling can be found under `./house_details/models.py` I have modelled the data under the assumption that any value can be blank except for **zillow_id**. I
+The code for data modelling can be found under `./house_details/models.py` I have modelled the data under the assumption that any value can be blank except for **zillow_id**.  
 
 ## To ingest the CSV data
 
