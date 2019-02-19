@@ -15,16 +15,15 @@ except **zillow_id**
 
 ## To ingest the CSV data
 
-### [Endpoint](http://127.0.0.1:8000/admin/house_details/housedetails/)
+This feature can be found at [Endpoint](http://127.0.0.1:8000/admin/house_details/housedetails/).  
 
 I've used [django-import-export](https://django-import-export.readthedocs.io/en/latest/) library to allow admin to
-upload a CSV file, to import the data into a database, which can be queried later on.  
-Code enabling this feature for this can be found at `./house_details/import.html`, `./house_details/resource.py`, `./house_details/admin.py`  
+upload a CSV file, to import the data into a database, which can be queried later on. Code enabling this feature for this can be found at `./house_details/import.html`, `./house_details/resource.py`, `./house_details/admin.py`  
 ![Image of Admin CSV Upload](./django_import_csv.png)
 
 ## To view complete data
 
-The complete data can be viewed queried using this [endpoint](http://127.0.0.1:8000/api/)
+The complete data can be viewed queried using this [endpoint](http://127.0.0.1:8000/api/). Please upload a CSV or create an entry before trying to view the data. 
 
 ## To query the data
 
