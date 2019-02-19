@@ -1,0 +1,4 @@
+.vscode/
+challenge_data.csv
+db.sqlite3
+.~lock.challenge_data.csv#
