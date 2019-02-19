@@ -10,12 +10,11 @@ python manage.py runserver
 
 ## Data Modelling
 
-The code for data modelling can be found under `./house_details/models.py` Null values are accepted for all fields
-except **zillow_id**
+The code for data modelling can be found under `./house_details/models.py` I have modelled the data under the assumption that any value can be blank except for **zillow_id**. I
 
 ## To ingest the CSV data
 
-This feature can be found at [Endpoint](http://127.0.0.1:8000/admin/house_details/housedetails/).  
+This feature can be found at this [endpoint](http://127.0.0.1:8000/admin/house_details/housedetails/).  
 
 I've used [django-import-export](https://django-import-export.readthedocs.io/en/latest/) library to allow admin to
 upload a CSV file, to import the data into a database, which can be queried later on. Code enabling this feature for this can be found at `./house_details/import.html`, `./house_details/resource.py`, `./house_details/admin.py`  
